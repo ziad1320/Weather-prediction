@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # Load your temperature data
-data = pd.read_csv('temperature_data.csv')  # Ensure this file is present
+data = pd.read_csv('real_temp.csv')  # Ensure this file is present
 data['date'] = pd.to_datetime(data['date'])  # Ensure the date is in datetime format
 data.set_index('date', inplace=True)  # Set the date as the index
 
